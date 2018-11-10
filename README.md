@@ -1,3 +1,3 @@
-# DSA_Implementing_File_I_O_Library
+# DSA_Implementing_Diff_and_Patch_Linux_Commands
 
-In this project, I will try to implement the FILE functions(fopen, fread, fwrite, fclose, fgetpos, fsetpos, feof, ftell, fseek, and maybe fprintf) using the raw set of functions open, read, write, Iseek etc. 
+In this project, I will try to implement the diff and patch linux commands, and the attributes -y  -c  -r  -t  -w  -b -i of diff. 

@@ -418,7 +418,7 @@ int patch_hunk_normal(int pline, char (*f1)[1024], char (*f2)[1024], int fd, sta
 	int alpha, ls1, ls2, le1, le2, k, count, finalline, i, prevline;
 	char *fe;
 	alpha = line_numbers(f2[pline], s1, s2);
-	printf("%d\n", alpha);
+	//rintf("%d\n", alpha);
 	le1 = pop(s1);
 	ls1 = pop(s1);
 	le2 = pop(s2);
@@ -442,7 +442,7 @@ int patch_hunk_normal(int pline, char (*f1)[1024], char (*f2)[1024], int fd, sta
 		write(fd, f1[k], i);
 		count = pline + 1;
 		finalline = count + (le2 - ls2);
-		printf("%s%s", f2[count], f2[finalline]);
+		//printf("%s%s", f2[count], f2[finalline]);
 		while(count <= finalline) {
 			fe = strtok(f2[count], " ");
 			fe = strtok(NULL, "\0");
@@ -453,7 +453,7 @@ int patch_hunk_normal(int pline, char (*f1)[1024], char (*f2)[1024], int fd, sta
 	} else if(alpha == C) {
 		count = pline + 3 + le1 - ls1;
 		finalline = count + (le2 - ls2);
-		printf("%s%s", f2[count], f2[finalline]);
+		//printf("%s%s", f2[count], f2[finalline]);
 		while(count <= finalline) {
 			fe = strtok(f2[count], " ");
 			fe = strtok(NULL, "\0");
@@ -463,7 +463,7 @@ int patch_hunk_normal(int pline, char (*f1)[1024], char (*f2)[1024], int fd, sta
 		}	
 	}
 
-	if(rev == 0) {
+	if(rev == 1) {
 		if(le2 != f2lines - 1) {
 			count = le1;
 			finalline = f1lines;

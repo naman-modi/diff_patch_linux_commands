@@ -1,0 +1,7 @@
+Naman Modi
+SY IT 
+111708037
+
+I have LSC(longest common subsequence) algorithm, and read it from geeksforgeeks.
+I have discussed about the algorithms with Omkar and Bhaskar, from SYIT and SYCOMP respectively.
+

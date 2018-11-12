@@ -1,0 +1,13 @@
+./project1 1.c 2.c >1.patch
+
+./project1 -c 1.c 2.c >2.patch
+
+./project1 -i -b 1.c 2.c
+
+./project1 -b -c 1.c 2.c
+
+./project1 -ibwc 1.c 2.c
+
+./project2 1.c 1.patch
+
+./project2 1.c 2.patch
